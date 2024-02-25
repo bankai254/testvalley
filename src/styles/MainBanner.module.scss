@@ -1,0 +1,155 @@
+.main-banner {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (min-width: 960px) {
+    .swiper-container {
+        width:960px;
+        overflow: visible;
+    }
+}
+
+.swiper-container .swiper-wrapper {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: content-box;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+@media (min-width: 960px) {
+    .swiper-container .swiper-wrapper {
+        width:1000%;
+    }
+}
+
+@media (min-width: 960px) {
+    .swiper-container:before,.swiper-container:after {
+        content:'';
+        display: block;
+        width: 1000%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: rgba(255,255,255,0.6);
+        z-index: 10;
+    }
+
+    .swiper-container:before {
+        left: -1000%;
+    }
+
+    .swiper-container:after {
+        right: -1000%;
+    }
+}
+
+.swiper-container .swiper-slide {
+    text-align: center;
+    cursor: pointer;
+}
+
+.swiper-container .swiper-button-prev {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(51,51,51,0.5);
+    padding: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    position: absolute;
+    left: 16px;
+}
+
+@media (min-width: 960px) {
+    .swiper-container .swiper-button-prev {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+.swiper-container .swiper-button-prev:after {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.swiper-container .swiper-button-next {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(51,51,51,0.5);
+    padding: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    position: absolute;
+    right: 16px;
+}
+
+@media (min-width: 960px) {
+    .swiper-container .swiper-button-next {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+.swiper-container .swiper-button-next:after {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.swiper-container .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-container .swiper-pagination-bullet {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+@media (min-width: 960px) {
+    .swiper-container .swiper-pagination-bullet {
+        height:8px;
+        width: 8px;
+    }
+}
