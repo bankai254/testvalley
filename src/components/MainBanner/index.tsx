@@ -1,17 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
 import Image from 'next/image';
 import { register } from 'swiper/element/bundle';
-import { Navigation } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import useSWR from 'swr';
 
 // Import Swiper styles
 import 'swiper/scss';
 import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
+import 'swiper/css/autoplay';
 
-import '@/styles/MainBanner.module.scss';
-
+import styles from '@/styles/MainBanner.module.scss';
 export interface MainBanner {
   mainBannerId: number;
   title: string;
@@ -32,7 +31,7 @@ export interface MainBanner {
 export const MainBanner = () => {
   const { data, error } = useSWR('main-banner/all');
 
-  useEffect(() = > {
+  useEffect(() => {
     register();
   }, []);
 
@@ -52,8 +51,29 @@ export const MainBanner = () => {
   ));
 
   return (
-    <div className="main-banner">
-      <swiper-container slides-per-view="3" navigation="true" pagination="true">
+    <div className={styles.mainBanner}>
+      <swiper-container
+        slides-per-view="3"
+        space-between="32"
+        speed="500"
+        loop="true"
+        navigation="true"
+        initial-slide="1"
+        pagination="true"
+        centered-slides="true"
+        autoplay="true"
+        breakpoints={JSON.stringify({
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+
+          960: {
+            slidesPerView: 3,
+            spaceBetween: 32
+          }
+        })}
+      >
         {bannerItems}
       </swiper-container>
     </div>
