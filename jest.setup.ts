@@ -1,4 +1,4 @@
-import { server } from 'mocks/msw/server';
+import { server } from 'src/mocks/msw/server';
 
 import '@testing-library/jest-dom';
 
