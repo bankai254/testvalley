@@ -98,7 +98,11 @@ const CollectionItem = ({ item }: { item: ItemsEntity }) => {
           </div>
         )}
         <div className={styles.mediaImage}>
-          <Image src={media ? media[0].uri : ''} alt="" height={174} width={174} />
+          <Image
+            src={media ? media[0].uri : ''}
+            alt=""
+            fill
+          />
         </div>
       </div>
       <div className={styles.itemTitle}>{title}</div>
@@ -144,4 +148,4 @@ const CollectionItem = ({ item }: { item: ItemsEntity }) => {
   );
 };
 
-export default memo(CollectionItem)
+export default memo(CollectionItem);

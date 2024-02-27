@@ -27,12 +27,13 @@ export interface CollectionInterface {
   singleCollections?: null[] | null;
 }
 
-
 const Collection = ({ collection }: { collection: CollectionInterface }) => {
   const collectionItems = useMemo(
     () =>
       collection.items?.map((item: ItemsEntity) => (
-        <SwiperSlide key={item.entityId} className={styles.swiperSlide}><CollectionItem item={item} /></SwiperSlide>
+        <SwiperSlide key={item.entityId} className={styles.swiperSlide}>
+          <CollectionItem item={item} />
+        </SwiperSlide>
       )),
     [collection]
   );
@@ -53,6 +54,24 @@ const Collection = ({ collection }: { collection: CollectionInterface }) => {
           loop
           speed={500}
           spaceBetween={8}
+          breakpoints={{
+            '@0.00': {
+              slidesPerView: 1,
+              spaceBetween: 2
+            },
+            '@0.75': {
+              slidesPerView: 2,
+              spaceBetween: 4
+            },
+            '@1.00': {
+              slidesPerView: 3,
+              spaceBetween: 8
+            },
+            '@1.50': { 
+              slidesPerView: 4, 
+              spaceBetween: 8, 
+            },
+          }}
         >
           {collectionItems}
         </Swiper>
@@ -61,4 +80,4 @@ const Collection = ({ collection }: { collection: CollectionInterface }) => {
   );
 };
 
-export default memo(Collection)
+export default memo(Collection);
