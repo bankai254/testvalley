@@ -40,6 +40,7 @@ export default function Home() {
         <MainShortcuts />
         <Collections />
       </main>
+      <footer></footer>
     </>
   );
 }

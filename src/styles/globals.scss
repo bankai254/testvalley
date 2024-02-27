@@ -111,6 +111,14 @@ header {
   }
 }
 
+footer{
+  background-color: #f7f7f7;
+  margin: 120px auto 0;
+  min-width: 360px;
+  max-width: 420px;
+  padding-bottom: 100px;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -197,6 +205,15 @@ header {
   }
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 960px) {
   .swiper {
     width: 960px;
@@ -240,5 +257,10 @@ header {
     &:after {
       right: -1000%;
     }
+  }
+
+  footer{
+    padding: 20px;
+    max-width: none;
   }
 }
