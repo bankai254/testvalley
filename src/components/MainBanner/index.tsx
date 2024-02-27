@@ -12,6 +12,8 @@ import 'swiper/scss/pagination';
 import 'swiper/scss/autoplay';
 
 import styles from '@/styles/MainBanner.module.scss';
+
+import { Loader } from '@/components/Loader';
 export interface MainBanner {
   mainBannerId: number;
   title: string;
@@ -33,7 +35,7 @@ export const MainBanner = () => {
   const { data, error } = useSWR('main-banner/all');
 
   if (error) return <div style={{ textAlign: 'center' }}>Failed to load</div>;
-  if (!data) return <div style={{ textAlign: 'center', display: 'block' }}>Loading...</div>;
+  if (!data) return <Loader />;
 
   const bannerItems = data.map((banner: MainBanner) => (
     <SwiperSlide key={banner.mainBannerId}>

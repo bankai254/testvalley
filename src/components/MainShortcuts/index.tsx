@@ -5,6 +5,7 @@ import useSWR from 'swr';
 
 import styles from '@/styles/MainShortcuts.module.scss';
 
+import { Loader } from '@/components/Loader';
 interface ShortcutInterface {
   mainShortcutId: number;
   title: string;
@@ -24,7 +25,7 @@ export const MainShortcuts = () => {
   const { data, error } = useSWR('main-shortcut/all');
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading...</div>;
+  if (!data) return  <Loader />;
 
   const shortcuts = data.map((shortcut: ShortcutInterface) => (
     <div className={styles.shortcut} key={shortcut.mainShortcutId}>
