@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 import styles from '@/styles/Home.module.scss';
 
+import { Collections } from '@/components/Collections';
 import { Header } from '@/components/Header';
 import { MainBanner } from '@/components/MainBanner';
 import { MainShortcuts } from '@/components/MainShortcuts';
@@ -37,6 +38,7 @@ export default function Home() {
         <Header />
         <MainBanner />
         <MainShortcuts />
+        <Collections />
       </main>
     </>
   );
