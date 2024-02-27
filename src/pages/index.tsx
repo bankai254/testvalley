@@ -6,6 +6,7 @@ import styles from '@/styles/Home.module.scss';
 
 import { Header } from '@/components/Header';
 import { MainBanner } from '@/components/MainBanner';
+import { MainShortcuts } from '@/components/MainShortcuts';
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
       <main className={`${styles.main}`}>
         <Header />
         <MainBanner />
+        <MainShortcuts />
       </main>
     </>
   );
