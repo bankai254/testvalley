@@ -1,16 +1,36 @@
-import { server } from 'src/mocks/msw/server';
-
 import '@testing-library/jest-dom';
 
 // Establish API mocking before all tests.
-beforeAll(() => server.listen());
+beforeAll(() => {
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    value: jest.fn().mockImplementation((query) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: jest.fn(), // Deprecated
+      removeListener: jest.fn(), // Deprecated
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      dispatchEvent: jest.fn(),
+    })),
+  });
+});
 
 // Reset any request handlers that we may add during the tests,
 // so they don't affect other tests.
-afterEach(() => server.resetHandlers());
+afterEach(() => {});
 
 // Clean up after the tests are finished.
-afterAll(() => server.close());
+afterAll(() => {});
+
+const mockMatchMedia= jest.fn();
+mockMatchMedia.mockReturnValue({
+  observe: () => null,
+  unobserve: () => null,
+  disconnect: () => null
+});
+window.matchMedia = mockMatchMedia;
 
 const mockIntersectionObserver = jest.fn();
 mockIntersectionObserver.mockReturnValue({
