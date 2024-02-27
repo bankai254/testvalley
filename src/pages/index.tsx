@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Head from 'next/head';
+import Image from 'next/image';
 
 import styles from '@/styles/Home.module.scss';
 
@@ -8,8 +9,16 @@ import { Collections } from '@/components/Collections';
 import { Header } from '@/components/Header';
 import { MainBanner } from '@/components/MainBanner';
 import { MainShortcuts } from '@/components/MainShortcuts';
+import { useMediaQueries } from '@/hooks/useMediaQueries';
 
 export default function Home() {
+  const { md } = useMediaQueries();
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  useEffect(() => {
+    setShowMobileMenu(!md);
+  }, [md]);
+
   return (
     <>
       <Head>
@@ -34,11 +43,60 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.testvalley.kr/" />
       </Head>
+      <Header />
       <main className={`${styles.main}`}>
-        <Header />
         <MainBanner />
         <MainShortcuts />
         <Collections />
+        {showMobileMenu && (
+          <div className="mobile-menu">
+            <div className="item">
+              <Image
+                src="/navibar/ico-home-on.svg"
+                alt="홈"
+                width={21}
+                height={21}
+              />
+              <p>홈</p>
+            </div>
+            <div className="item">
+              <Image
+                src="/navibar/ico-search-off.svg"
+                alt="검색"
+                width={21}
+                height={21}
+              />
+              <p>검색</p>
+            </div>
+            <div className="item">
+              <Image
+                src="/navibar/ico-category-off.svg"
+                alt="카테고리"
+                width={21}
+                height={21}
+              />
+              <p>카테고리</p>
+            </div>
+            <div className="item">
+              <Image
+                src="/navibar/ico-likelist-off.svg"
+                alt="좋아요"
+                width={21}
+                height={21}
+              />
+              <p>좋아요</p>
+            </div>
+            <div className="item">
+              <Image
+                src="/navibar/ico-mypage-off.svg"
+                alt="마이페이지"
+                width={21}
+                height={21}
+              />
+              <p>마이페이지</p>
+            </div>
+          </div>
+        )}
       </main>
       <footer></footer>
     </>

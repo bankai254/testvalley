@@ -64,6 +64,24 @@ export const MainBanner = () => {
         }}
         navigation
         centeredSlides={true}
+        breakpoints={{
+          '@0.00': {
+            slidesPerView: 1,
+            spaceBetween: 32
+          },
+          '@0.75': {
+            slidesPerView: 1,
+            spaceBetween: 32
+          },
+          '@1.00': {
+            slidesPerView: 1,
+            spaceBetween: 32
+          },
+          '@1.50': {
+            slidesPerView: 3,
+            spaceBetween: 32
+          }
+        }}
       >
         {bannerItems}
       </Swiper>

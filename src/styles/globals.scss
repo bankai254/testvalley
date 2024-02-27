@@ -98,6 +98,7 @@ header {
   background-color: rgb(255, 255, 255);
   z-index: 10;
   border-bottom: 1px solid rgb(238, 238, 238);
+  padding: 0 20px;
   .container {
     position: relative;
     height: 100%;
@@ -111,7 +112,7 @@ header {
   }
 }
 
-footer{
+footer {
   background-color: #f7f7f7;
   margin: 120px auto 0;
   min-width: 360px;
@@ -205,6 +206,35 @@ footer{
   }
 }
 
+.mobile-menu {
+  padding: 13px 12px;
+  display: flex;
+  position: fixed;
+  min-width: 360px;
+  width: 100%;
+  bottom: 0px;
+  z-index: 10;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  .item {
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+  }
+
+  p {
+    margin-top: 7px;
+    color: rgb(51, 51, 51);
+  }
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -212,6 +242,9 @@ footer{
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width: 768px) {
 }
 
 @media (min-width: 960px) {
@@ -258,8 +291,10 @@ footer{
       right: -1000%;
     }
   }
-
-  footer{
+  header {
+    padding: 0;
+  }
+  footer {
     padding: 20px;
     max-width: none;
   }
