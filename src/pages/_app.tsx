@@ -17,7 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
         revalidateOnFocus: false,
         revalidateOnReconnect: false,
         fetcher: fetcher,
-        onError: (error, key) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        onError: (error: any) => {
           if (error.status !== 403 && error.status !== 404) {
             // We can send the error to Sentry,
             // or show a notification UI.

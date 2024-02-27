@@ -16,6 +16,11 @@ const nextConfig = {
         hostname: '**.cloudfront.net',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: '**.amazonaws.com',
+        port: '',
+      }
     ],
   }
 }

@@ -29,6 +29,21 @@
   -webkit-font-smoothing: antialiased;
   outline: none;
   color: rgb(51, 51, 51);
+  font-family:
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
 }
 
 html,
@@ -96,18 +111,15 @@ header {
   }
 }
 
-.swiper,
-swiper-container {
+.swiper {
   width: 100%;
   height: 100%;
 
-  .swiper-slide,
-  swiper-slide {
+  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #000;
     cursor: pointer;
-    width: 960px !important;
     img {
     }
   }
