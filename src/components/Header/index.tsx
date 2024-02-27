@@ -15,7 +15,7 @@ export const Header = () => {
   }, [md]);
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-testid="header">
       <div className="container">
         <div className={`${styles.brand}`}>
           <Image src="/logo-new.svg" width={128} height={25} alt="Test Valley" />
