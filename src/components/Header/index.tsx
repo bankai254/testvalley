@@ -13,7 +13,7 @@ export const Header = () => {
           <div className={`${styles.category}`}>카테고리</div>
           <div className={`${styles.search}`}>
             <Image src="/search.svg" width={20} height={20} alt="Search" />
-            <input type="search" placeholder="살까말까 고민된다면 검색해보세요!" value="" />
+            <input type="search" placeholder="살까말까 고민된다면 검색해보세요!" value="" onChange={console.log}/>
           </div>
         </div>
         <div className={styles.account}>
