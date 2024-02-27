@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { SWRConfig } from 'swr';
@@ -35,6 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
+      <SpeedInsights />
     </SWRConfig>
   );
 }
