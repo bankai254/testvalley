@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ErrorBoundary,Provider as RollbarProvider } from '@rollbar/react';
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -57,6 +58,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </ErrorBoundary>
         <SpeedInsights />
+        <Analytics />
       </SWRConfig>
     </RollbarProvider>
   );
