@@ -28,7 +28,7 @@
     "react-router-dom": "^6.22.3",
     "rollbar": "^2.26.4",
     "superjson": "^2.2.1",
-    "swiper": "^11.0.7",
+    "swiper": "^11.1.0",
     "swr": "^2.2.5"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.73",
-    "@types/react-dom": "^18.2.22",
+    "@types/react-dom": "^18.2.23",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
     "dotenv": "^16.4.5",
