@@ -908,10 +908,10 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.1.tgz#1ec17e2edbec25c8306d424ecfbf13c7de1aaa31"
   integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
-"@remix-run/router@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.18.0.tgz#20b033d1f542a100c1d57cfd18ecf442d1784732"
-  integrity sha512-L3jkqmqoSVBVKHfpGZmLrex0lxR5SucGA0sUfFzGctehw+S/ggL9L/0NnC5mw6P8HUWpFZ3nQw3cRApjjWx9Sw==
+"@remix-run/router@1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.19.0.tgz#745dbffbce67f05386d57ca22c51dfd85c979593"
+  integrity sha512-zDICCLKEwbVYTS6TjYaWtHXxkdoUvD/QXvyVZjGCsWz5vyH7aFeONlPffPdW+Y/t6KT0MgXb2Mfjun9YpWN1dA==
 
 "@rollbar/react@^0.11.2":
   version "0.11.2"
@@ -1873,10 +1873,10 @@ axe-core@^4.9.1:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.9.1.tgz#fcd0f4496dad09e0c899b44f6c4bb7848da912ae"
   integrity sha512-QbUdXJVTpvUTHU7871ppZkdOLBeGUKBQWHkHrvN2V9IQWGMt61zf3B45BtzjxEJzYuj0JBjBZP/hmYS/R9pmAw==
 
-axios@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.2.tgz#b625db8a7051fbea61c35a3cbb3a1daa7b9c7621"
-  integrity sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==
+axios@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.3.tgz#a1125f2faf702bc8e8f2104ec3a76fab40257d85"
+  integrity sha512-Ar7ND9pU99eJ9GpoGQKhKf58GpUOgnzuaB7ueNQ5BMi0p+LZ5oaEnfF999fAArcTIBwXTCHAmGcHOZJaWPq9Nw==
   dependencies:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
@@ -5508,20 +5508,20 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-router-dom@^6.25.1:
-  version "6.25.1"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.25.1.tgz#b89f8d63fc8383ea4e89c44bf31c5843e1f7afa0"
-  integrity sha512-0tUDpbFvk35iv+N89dWNrJp+afLgd+y4VtorJZuOCXK0kkCWjEvb3vTJM++SYvMEpbVwXKf3FjeVveVEb6JpDQ==
+react-router-dom@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.26.0.tgz#8debe13295c58605c04f93018d659a763245e58c"
+  integrity sha512-RRGUIiDtLrkX3uYcFiCIxKFWMcWQGMojpYZfcstc63A1+sSnVgILGIm9gNUA6na3Fm1QuPGSBQH2EMbAZOnMsQ==
   dependencies:
-    "@remix-run/router" "1.18.0"
-    react-router "6.25.1"
+    "@remix-run/router" "1.19.0"
+    react-router "6.26.0"
 
-react-router@6.25.1:
-  version "6.25.1"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.25.1.tgz#70b4f1af79954cfcfd23f6ddf5c883e8c904203e"
-  integrity sha512-u8ELFr5Z6g02nUtpPAggP73Jigj1mRePSwhS/2nkTrlPU5yEkH1vYzWNyvSnSzeeE2DNqWdH+P8OhIh9wuXhTw==
+react-router@6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.26.0.tgz#d5af4c46835b202348ef2b7ddacd32a2db539fde"
+  integrity sha512-wVQq0/iFYd3iZ9H2l3N3k4PL8EEHcb0XlU2Na8nEwmiXgIUElEH6gaJDtUQxJ+JFzmIXaQjfdpcGWaM6IoQGxg==
   dependencies:
-    "@remix-run/router" "1.18.0"
+    "@remix-run/router" "1.19.0"
 
 react@^18.3.1:
   version "18.3.1"
@@ -6302,10 +6302,10 @@ ts-api-utils@^1.0.1, ts-api-utils@^1.3.0:
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-1.3.0.tgz#4b490e27129f1e8e686b45cc4ab63714dc60eea1"
   integrity sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==
 
-ts-jest@^29.2.3:
-  version "29.2.3"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-29.2.3.tgz#3d226ac36b8b820151a38f164414f9f6b412131f"
-  integrity sha512-yCcfVdiBFngVz9/keHin9EnsrQtQtEu3nRykNy9RVp+FiPFFbPJ3Sg6Qg4+TkmH0vMP5qsTKgXSsk80HRwvdgQ==
+ts-jest@^29.2.4:
+  version "29.2.4"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-29.2.4.tgz#38ccf487407d7a63054a72689f6f99b075e296e5"
+  integrity sha512-3d6tgDyhCI29HlpwIq87sNuI+3Q6GLTTCeYRHCs7vDz+/3GCMwEtV9jezLyl4ZtnBgx00I7hm8PCP8cTksMGrw==
   dependencies:
     bs-logger "0.x"
     ejs "^3.1.10"
