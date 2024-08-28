@@ -28,12 +28,12 @@
     "react-router-dom": "^6.26.1",
     "rollbar": "^2.26.4",
     "superjson": "^2.2.1",
-    "swiper": "^11.1.10",
+    "swiper": "^11.1.11",
     "swr": "^2.2.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@faker-js/faker": "^8.4.1",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^14.3.0",
