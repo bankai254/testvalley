@@ -29,7 +29,7 @@
     "rollbar": "^2.26.4",
     "superjson": "^2.2.2",
     "swiper": "^11.2.10",
-    "swr": "^2.3.4"
+    "swr": "^2.3.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
