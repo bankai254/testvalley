@@ -32,7 +32,7 @@
     "swr": "^2.3.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
+    "@commitlint/cli": "^20.2.0",
     "@commitlint/config-conventional": "^19.8.1",
     "@faker-js/faker": "^8.4.1",
     "@testing-library/jest-dom": "^6.9.1",
