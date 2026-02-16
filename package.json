@@ -28,7 +28,7 @@
     "react-router-dom": "^6.28.0",
     "rollbar": "^2.26.5",
     "superjson": "^2.2.6",
-    "swiper": "^11.2.10",
+    "swiper": "^12.1.1",
     "swr": "^2.4.0"
   },
   "devDependencies": {
