@@ -2102,12 +2102,12 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^20.17.34":
-  version "20.17.34"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.34.tgz#ac53680354cc0719011b82868299628697d0190f"
-  integrity sha512-FvV5vIho5+fRvTxgwnE7DOWicSkhyjPstzoHlL00KJRv/D5EPkbnlbMrb1hiyf9xhgtijyiR1pYxd4gBx2Dqcw==
+"@types/node@*", "@types/node@^25.5.0":
+  version "25.5.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.5.0.tgz#5c99f37c443d9ccc4985866913f1ed364217da31"
+  integrity sha512-jp2P3tQMSxWugkCUKLRPVUpGaL5MVFwF8RDuSRztfwgN1wmqJeMSbKlnEtQqU8UrhTmzEmZdu2I6v2dpp7XIxw==
   dependencies:
-    undici-types "~6.19.2"
+    undici-types "~7.18.0"
 
 "@types/pg-pool@2.0.7":
   version "2.0.7"
@@ -8098,10 +8098,10 @@ unbox-primitive@^1.1.0:
     has-symbols "^1.1.0"
     which-boxed-primitive "^1.1.1"
 
-undici-types@~6.19.2:
-  version "6.19.8"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
-  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
+undici-types@~7.18.0:
+  version "7.18.2"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-7.18.2.tgz#29357a89e7b7ca4aef3bf0fd3fd0cd73884229e9"
+  integrity sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==
 
 unicorn-magic@^0.1.0:
   version "0.1.0"
