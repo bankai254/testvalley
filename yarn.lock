@@ -408,7 +408,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.22.5"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3":
+"@babel/runtime@^7.12.5":
   version "7.24.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.0.tgz#584c450063ffda59697021430cb47101b085951e"
   integrity sha512-Chk32uHMg6TnQdvw2e9IlqPpFX/6NLuK0Ys2PqLb7/gL5uFn9mXvK715FGLlOLQrcO4qIkNHkvPGktzzXexsFw==
@@ -3768,12 +3768,11 @@ eslint-plugin-import@^2.28.1:
     semver "^6.3.1"
     tsconfig-paths "^3.15.0"
 
-eslint-plugin-jest-dom@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.7.0.tgz#cfdad3748e7b1c955e3a60d8f6bb66d7542519ee"
-  integrity sha512-6mSGCjwGvWKMK+vHihFxGa177AN5R5IC6AVW65bwEKf/InxI36kcQkF/vfdl0qyWQZnjUBR+fM8O+kwdoXMmZg==
+eslint-plugin-jest-dom@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.9.0.tgz#74bad429579cd72b5edc1470e94228e4af13c796"
+  integrity sha512-pK7rmqrf2ptbouuG2QMrH+BnVfzyTR+/BSSpP6LPj851s1+4HbQqeDE7RCISR69T1iOJBDGnCJ4VxNou2RvtfQ==
   dependencies:
-    "@babel/runtime" "^7.16.3"
     requireindex "^1.2.0"
 
 eslint-plugin-jsx-a11y@^6.10.2, eslint-plugin-jsx-a11y@^6.7.1:
