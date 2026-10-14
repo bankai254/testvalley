@@ -1223,10 +1223,10 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.21.0.tgz#c65ae4262bdcfe415dbd4f64ec87676e4a56e2b5"
   integrity sha512-xfSkCAchbdG5PnbrKqFWwia4Bi61nH+wm8wLEqfHDyp7Y3dZzgqS2itV8i4gAq9pC2HsTpwyBC6Ds8VHZ96JlA==
 
-"@rollbar/react@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@rollbar/react/-/react-0.12.1.tgz#2c8ac9a06b1f6ba75d67346f55fee3c120100865"
-  integrity sha512-qi1ahC4WRXTrqh7hkBM0H5cSKh4TBA5A9jKliokphxikmZsAfbQEvwjIM6IFkqEljeWt1nAfuuFC5w32sLqoTg==
+"@rollbar/react@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@rollbar/react/-/react-1.2.0.tgz#57f063e5c00663e66fadb224380d0d9a60568968"
+  integrity sha512-GK1Ng+y4hfE0Tw9tywLfec1PMQt83GNf2LPu+lvbWAd1HGKLkI8ENwHniXPD50783PCWuJzZ7hWZbDH8dh7rAA==
   dependencies:
     tiny-invariant "^1.1.0"
 
