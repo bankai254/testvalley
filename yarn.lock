@@ -1228,11 +1228,12 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.21.0.tgz#c65ae4262bdcfe415dbd4f64ec87676e4a56e2b5"
   integrity sha512-xfSkCAchbdG5PnbrKqFWwia4Bi61nH+wm8wLEqfHDyp7Y3dZzgqS2itV8i4gAq9pC2HsTpwyBC6Ds8VHZ96JlA==
 
-"@rollbar/react@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@rollbar/react/-/react-0.12.1.tgz#2c8ac9a06b1f6ba75d67346f55fee3c120100865"
-  integrity sha512-qi1ahC4WRXTrqh7hkBM0H5cSKh4TBA5A9jKliokphxikmZsAfbQEvwjIM6IFkqEljeWt1nAfuuFC5w32sLqoTg==
+"@rollbar/react@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@rollbar/react/-/react-1.2.1.tgz#6f9a103cb105c9c6084780f6e2fe17f85f4dd561"
+  integrity sha512-8gml8zBEKEci3BY3DqxZbW9iiO6WO/SYdCHdptRVWhCwO3OE3ufnosu0oiG5sjsAWDDEKZtI1gbYMbEucwVUsw==
   dependencies:
+    prop-types "^15.7.2"
     tiny-invariant "^1.1.0"
 
 "@rollup/plugin-commonjs@28.0.1":
@@ -6491,7 +6492,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
